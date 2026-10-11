@@ -1,0 +1,45 @@
+output "logging_log_saved_search_lookup_id" {
+  description = "Map of id values across all logging_log_saved_search_lookup, keyed the same as var.logging_log_saved_search_lookup except keys with no id are omitted"
+  value       = { for k, v in data.oci_logging_log_saved_search.logging_log_saved_search_lookup : k => v.id if v.id != null && length(v.id) > 0 }
+}
+output "logging_log_saved_search_lookup_compartment_id" {
+  description = "Map of compartment_id values across all logging_log_saved_search_lookup, keyed the same as var.logging_log_saved_search_lookup except keys with no compartment_id are omitted"
+  value       = { for k, v in data.oci_logging_log_saved_search.logging_log_saved_search_lookup : k => v.compartment_id if v.compartment_id != null && length(v.compartment_id) > 0 }
+}
+output "logging_log_saved_search_lookup_defined_tags" {
+  description = "Map of defined_tags values across all logging_log_saved_search_lookup, keyed the same as var.logging_log_saved_search_lookup except keys with no defined_tags are omitted"
+  value       = { for k, v in data.oci_logging_log_saved_search.logging_log_saved_search_lookup : k => v.defined_tags if v.defined_tags != null && length(v.defined_tags) > 0 }
+}
+output "logging_log_saved_search_lookup_description" {
+  description = "Map of description values across all logging_log_saved_search_lookup, keyed the same as var.logging_log_saved_search_lookup except keys with no description are omitted"
+  value       = { for k, v in data.oci_logging_log_saved_search.logging_log_saved_search_lookup : k => v.description if v.description != null && length(v.description) > 0 }
+}
+output "logging_log_saved_search_lookup_freeform_tags" {
+  description = "Map of freeform_tags values across all logging_log_saved_search_lookup, keyed the same as var.logging_log_saved_search_lookup except keys with no freeform_tags are omitted"
+  value       = { for k, v in data.oci_logging_log_saved_search.logging_log_saved_search_lookup : k => v.freeform_tags if v.freeform_tags != null && length(v.freeform_tags) > 0 }
+}
+output "logging_log_saved_search_lookup_log_saved_search_id" {
+  description = "Map of log_saved_search_id values across all logging_log_saved_search_lookup, keyed the same as var.logging_log_saved_search_lookup except keys with no log_saved_search_id are omitted"
+  value       = { for k, v in data.oci_logging_log_saved_search.logging_log_saved_search_lookup : k => v.log_saved_search_id if v.log_saved_search_id != null && length(v.log_saved_search_id) > 0 }
+}
+output "logging_log_saved_search_lookup_name" {
+  description = "Map of name values across all logging_log_saved_search_lookup, keyed the same as var.logging_log_saved_search_lookup except keys with no name are omitted"
+  value       = { for k, v in data.oci_logging_log_saved_search.logging_log_saved_search_lookup : k => v.name if v.name != null && length(v.name) > 0 }
+}
+output "logging_log_saved_search_lookup_query" {
+  description = "Map of query values across all logging_log_saved_search_lookup, keyed the same as var.logging_log_saved_search_lookup except keys with no query are omitted"
+  value       = { for k, v in data.oci_logging_log_saved_search.logging_log_saved_search_lookup : k => v.query if v.query != null && length(v.query) > 0 }
+}
+output "logging_log_saved_search_lookup_state" {
+  description = "Map of state values across all logging_log_saved_search_lookup, keyed the same as var.logging_log_saved_search_lookup except keys with no state are omitted"
+  value       = { for k, v in data.oci_logging_log_saved_search.logging_log_saved_search_lookup : k => v.state if v.state != null && length(v.state) > 0 }
+}
+output "logging_log_saved_search_lookup_time_created" {
+  description = "Map of time_created values across all logging_log_saved_search_lookup, keyed the same as var.logging_log_saved_search_lookup except keys with no time_created are omitted"
+  value       = { for k, v in data.oci_logging_log_saved_search.logging_log_saved_search_lookup : k => v.time_created if v.time_created != null && length(v.time_created) > 0 }
+}
+output "logging_log_saved_search_lookup_time_last_modified" {
+  description = "Map of time_last_modified values across all logging_log_saved_search_lookup, keyed the same as var.logging_log_saved_search_lookup except keys with no time_last_modified are omitted"
+  value       = { for k, v in data.oci_logging_log_saved_search.logging_log_saved_search_lookup : k => v.time_last_modified if v.time_last_modified != null && length(v.time_last_modified) > 0 }
+}
+
